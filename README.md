@@ -13,13 +13,15 @@
 
 ## Пул тем
 
-- DCEL алгоритм форчуна
+- DCEL для хранения разбиений плоскости; алгоритм форчуна вычисления диаграммы Вороного (фольклор)
 - [Arborally satisfied sets](https://erikdemaine.org/papers/BST_SODA2009/paper.pdf):
   гениальный Эрик Демейн о соответствии последовательностей запросов к деревьям поиска и множеств точек на плоскости.
-- [Персистентность](https://www.cs.cmu.edu/~sleator/papers/another-persistence.pdf)
-  [применение]() к point location
-- Dynamic nearest neighbor
-- Chan's structure
+- [Персистентность](https://www.cs.cmu.edu/~sleator/papers/another-persistence.pdf):
+  хранение структуры данных, изменяющейся со временем.
+  [Применение](https://dl.acm.org/doi/pdf/10.1145/6138.6151)
+  к задаче локализации точки в разбиении на плоскости.
+- [Chan's structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) для неявной диаграммы Вороного (dynamic nearest neighbor), по факту и заверениям автора умеет *всё что угодно.*
+- Allen et al., Incremental Voronoi diagrams
 - Sublinear explicit Voronoi diagrams
 - Charalampopoulos et al.: Almost Optimal Local LCS
 - Tiskin, Zolotov: Optimal Local LCS
