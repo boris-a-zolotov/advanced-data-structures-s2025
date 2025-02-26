@@ -1,1 +1,8 @@
 old/*
+
+*.bak
+*.aux
+*.log
+*.out
+*.snm
+*ctex.gz

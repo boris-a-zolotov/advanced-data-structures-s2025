@@ -1,0 +1,105 @@
+\RequirePackage[margin=2.2cm]{geometry}
+\RequirePackage{amsmath,amssymb,amsthm,mathtools,hyperref}
+\RequirePackage{graphicx,xcolor,caption,subcaption,makecell}
+\RequirePackage{enumerate,enumitem,indentfirst}
+\RequirePackage[numbers,sort]{natbib}
+\RequirePackage{algorithm,algpseudocode}
+
+\hypersetup{unicode=true}
+
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{cmap}
+\RequirePackage[T2A]{fontenc}
+\RequirePackage{csquotes}
+\RequirePackage[russian]{babel}
+\RequirePackage{xspace}
+
+\RequirePackage{tikz,tkz-euclide}
+\usetikzlibrary{arrows,arrows.meta,patterns,matrix,
+	shapes,fit,calc,shadows,plotmarks}
+\tikzset{>={Latex[width=1.2mm,length=2.8mm]}}
+
+\linespread{1.12} \setlist[enumerate]{itemsep=1.2mm}
+\setlist[itemize]{nosep}
+\DeclarePairedDelimiter{\lr}{(}{)}
+
+\parindent=0.33in \footskip=1.4cm \parskip=0.12cm
+\renewcommand{\labelenumi}{\arabic{enumi}) }
+
+\newtheorem{example}{Пример}
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{corollary}[theorem]{Следствие}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+
+\newcommand{\baserect}{
+	\foreach \x in {0,...,6} {\draw[gray,opacity=0.8] (\x,0) -- (\x,5);}
+	\foreach \y in {0,...,5} {\draw[gray,opacity=0.8] (0,\y) -- (6,\y);}
+	\draw[thick] (0,0) -- (6,0) -- (6,5) -- (0,5) -- cycle;
+}
+
+\definecolor{fill1}{RGB}{250,156,94}
+\definecolor{fill2}{RGB}{247,253,86}
+\definecolor{fill3}{RGB}{135,246,121}
+\definecolor{fill4}{RGB}{161,248,239}
+\definecolor{fill5}{RGB}{198,142,245}
+\definecolor{fill6}{RGB}{185,168,139}
+
+\definecolor{bluetri}{RGB}{45,155,190}
+\definecolor{texmakerback}{HTML}{282828}
+\definecolor{graytext}{HTML}{e6e6e6}
+
+\definecolor{stackred}{RGB}{245,90,98}
+\definecolor{stackgreen}{RGB}{95,235,130}
+\definecolor{stackblue}{RGB}{95,180,240}
+\definecolor{stackgray}{RGB}{50,50,50}
+
+\definecolor{parabred}{HTML}{f55a62}
+\definecolor{parablue}{HTML}{5064eb}
+
+\newcommand{\midnode}{
+	node[midway,circle,fill=white,fill opacity=0.92,inner sep=0pt,minimum size=2.1ex]
+}
+
+\newcommand{\slim}{\sum\limits}
+\newcommand{\sloglim}{\sum\limits_{i = \frac{\log n}{2}}^{\log n}}
+\newcommand{\sn}{s_\text{new}}
+\newcommand{\Ds}{Davenport~– Schinzel\xspace}
+
+\DeclareMathOperator{\rlbl}{relabel}
+\DeclareMathOperator{\size}{size}
+\DeclareMathOperator{\Rel}{Rel}
+\DeclareMathOperator{\Rlbl}{Relabel}
+\DeclareMathOperator{\Inse}{Insert}
+
+
+%--- SEVD
+
+\newcommand{\br}{\mathbb R}
+\newcommand{\Ot}{\tilde{O}}
+\def\otl{$\Ot(1)$ }
+\newcommand{\nof}{N^\frac{1}{4}}
+\newcommand{\noh}{N^\frac{1}{2}}
+\newcommand{\ntf}{N^\frac{3}{4}}
+\newcommand{\lrp}[1]{\left(#1\right)}
+\newcommand{\lrc}[1]{\left\lceil#1\right\rceil}
+
+\DeclareMathOperator{\polylog}{polylog}
+\DeclareMathOperator{\cost}{cost}
+\def\mC{\mathcal C}
+\def\mG{\mathcal G}
+
+\def\abcaption#1#2{ \\
+	\vspace{-2mm}
+	\begin{subfigure}[b]{0.33\textwidth} \centering
+		\caption{\ }
+		\label{#1}
+	\end{subfigure} ~~
+	\begin{subfigure}[b]{0.3\textwidth} \centering
+		\caption{\ }
+		\label{#2}
+	\end{subfigure}
+	\vspace{-2mm}
+}
