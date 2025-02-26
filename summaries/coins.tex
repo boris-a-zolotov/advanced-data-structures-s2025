@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{f420}
+
+\begin{document}
+
+\section{The coin problem}
+
+A detailed introduction into amortized analysis, including
+the definition of potential function and examples of estimates of it
+is given in~[CLRS].
+Here we focus on one classical result concerning amortized analysis.
+It is rather folklore and is given as an exercise in several university courses;
+we show it here to establish its formal proof, because it is crucial for
+understanding of what we prove further.
+
+Given $n$ coins stored in $n$ piles (some piles may be empty). A series of operations
+is executed on these piles. One operation consists of selecting a pile and distributing
+all its coins equally among other piles, one coin per pile. Piles that receive a coin
+and piles that do not can be chosen freely. An example of such operations can be
+seen in Figure~\ref{fig:coins-distrib}. We assume the number of piles is equal
+to the number of coins so that these operations can be executed
+on any configuration of coins.
+
+\input{img/coins-distrib}
+
+Clearly during one operation at most $n$ coins are distributed. However, during $k$ consecutive operations the average number of coins disrtibuted per operation is $o(n)$. Informally, each operation makes the heights of the piles more uniform, making it impossible to have a large pile to distribute after each of the operations. This observation is formalized by the following theorem:
+
+\begin{theorem} \label{thm:coins}
+	For $k \ge \sqrt{n}$, if $k$ consecutive operations are executed, then the average number of coins distributed per operation is at most $3\sqrt{n}$.
+\end{theorem}
+
+\begin{proof} Denote piles by $p_1, \ldots, p_n$. We introduce a potential function that describes the configuration of piles and helps estimate the number of coins distributed during an operation executed on a pile:
+	\[ \Phi = \sum\limits_{j=1}^n \min \left\{ \text{size}(p_j), \sqrt{n} \right\}. \]
+
+Note that $\Phi$ is always at most $n$, since $n$ is the sum of actual sizes of all the piles. Denote by $T_i$ the number of coins distributed during the $i$-th operation, and by $\Phi_i$ the value of the potential after the $i$-th operation. Therefore, $\Phi_{0}$ and $\Phi_{k}$ are the values of the potential before and after the execution of all the operations respectively.
+
+We will now estimate $T_i + \Phi_{i-1} - \Phi_i$. To do so, note that the pile that is being distributed (without loss of generality, $p_1$) decreases in size to zero, and several other piles increase in size by~1. Distributing $p_1$ makes $\Phi$ decrease by at most $\sqrt{n}$, regardless of $\text{size} (p_1)$ being greater or less than~$\sqrt{n}$, by definition of $\Phi$. Figure~\ref{fig:pot-affects} illustrates it: a change in size of a pile does not affect the potential if the size of the pile is greater than~$\sqrt{n}$.
+
+\input{img/pot-affects}
+
+Several other piles receive one coin, the number of such piles is equal to $T_i$. However, some of these piles may not contribute to the change in the potential, again because their size is greater than $\sqrt{n}$. Note that the number of such large piles is at most $\sqrt{n}$. Thus, when the coins are being put into piles, there is at least $T_i - \sqrt{n}$ increase in potential. Combining these observations,
+	\[ T_i + \Phi_{i-1} - \Phi_i\ \le\ 
+	   T_i + \sqrt{n} - \ll T_i - \sqrt{n} \rr\ =\ 2 \sqrt{n}. \]
+
+We can now sum up $T_i + \Phi_{i-1} - \Phi_i$ for each of the consecutive operations. Note that $\Phi_0 - \Phi_k$ is between $-n$ and $n$.
+	\[ \sum\limits_{i=1}^k \ll T_i + \Phi_{i-1} - \Phi_i \rr\ =\ 
+	   \sum\limits_{i=1}^k T_i + \Phi_0 - \Phi_{k}\ \le\ 2\sqrt{n} \cdot k + n. \]
+
+This means average $T_i$ per operation is at most $2\sqrt{n} + \frac{n}{k} \le 3\sqrt{n}$. \end{proof}
+
+Informally, this theorem means that if during an operation one pile
+loses many coins, and many distinct piles get at most one coin each,
+there can only be so much of such operations.
+
+\end{document}

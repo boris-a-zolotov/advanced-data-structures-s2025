@@ -8,6 +8,7 @@
 |------------|----------------|--------|------------|
 | 2025.02.13 | Б. Золотов | [Биномиальные кучи](https://neerc.ifmo.ru/wiki/index.php?title=%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BA%D1%83%D1%87%D0%B0) | |
 | | | Range-дерево (de Berg et al., 5.3–5.6) | |
+| | | Введение в амортизационный анализ | [coins.pdf](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/summaries/coins.pdf) |
 | 2025.02.20 | [А. Буглеев](https://t.me/handelluss) | [Splay дерево](https://www.cs.cmu.edu/~sleator/papers/self-adjusting.pdf) | |
 | 2025.02.27 | [Д. Субботин](https://t.me/endimaa) | [Link-cut дерево](https://www.cs.cmu.edu/~sleator/papers/dynamic-trees.pdf) | |
 | 2025.03.06 | [А. Павловская](https://t.me/yungeiren) | Scapegoat дерево ([1](https://people.csail.mit.edu/rivest/pubs/GR93.pdf), [2](https://github.com/boris-a-zolotov/course-ads-s20/blob/master/main.pdf), [3](https://neerc.ifmo.ru/wiki/index.php?title=Scapegoat_Tree)) | |
