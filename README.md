@@ -23,7 +23,7 @@
   хранение структуры данных, изменяющейся со временем.
   [Применение](https://dl.acm.org/doi/pdf/10.1145/6138.6151)
   к задаче локализации точки в разбиении на плоскости.
-- [Chan's structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) для неявной диаграммы Вороного (dynamic nearest neighbor), по факту и заверениям автора умеет *всё что угодно.*
+- *(Д. Золотарёв)* [Chan's structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) для неявной диаграммы Вороного (dynamic nearest neighbor), по факту и заверениям автора умеет *всё что угодно.*
 - Allen et al., Incremental Voronoi diagrams
 - Sublinear explicit Voronoi diagrams
 - *(С. Пресняков)* Charalampopoulos et al.: Almost Optimal Local LCS
