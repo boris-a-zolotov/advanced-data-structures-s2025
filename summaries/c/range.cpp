@@ -18,6 +18,16 @@ void ptsOut () {
     }
 }
 
+int xMedian (vector <pair <int, int>> v) {
+    vector <pair <int, int>> t;
+    copy (v.begin(), v.end(), back_inserter(t));
+    sort (t.begin(), t.end(),
+          [](auto a, auto b) {return a.first < b.first;});
+    
+    int l = t.size();  l /= 2;  l -= 1;
+    return t[l].first;
+}
+
 void vecOut (int x, int y, vector <pair <int, int>> v) {
     int l = v.size();
     cout << "  \\draw (" << x << ", " << y << ") grid ++(" << l <<", 1)"
@@ -31,14 +41,8 @@ void vecOut (int x, int y, vector <pair <int, int>> v) {
     cout << ";\n";
 }
 
-int xMedian (vector <pair <int, int>> v) {
-    vector <pair <int, int>> t;
-    copy (v.begin(), v.end(), back_inserter(t));
-    sort (t.begin(), t.end(),
-          [](auto a, auto b) {return a.first < b.first;});
+void partition (int x, int y, vector <pair <int, int>> v) {
     
-    int l = t.size();  l /= 2;  l -= 1;
-    return t[l].first;
 }
 
 int main () {
