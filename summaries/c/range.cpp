@@ -28,21 +28,38 @@ int xMedian (vector <pair <int, int>> v) {
     return t[l].first;
 }
 
-void vecOut (int x, int y, vector <pair <int, int>> v) {
+void vecOut (float x, float y, vector <pair <int, int>> v) {
     int l = v.size();
-    cout << "  \\draw (" << x << ", " << y << ") grid ++(" << l <<", 1)"
-         << " (" << x+0.5 << ", " << y+0.5 << ")";
+
+    if (l==1) {
+        cout << "  \\draw (" << x << ", " << y << ") rectangle ++(1,1)";
+    } else {
+        cout << "  \\draw (" << x << ", " << y << ") grid ++(" << l <<", 1)";
+    }
+    cout << " (" << x+0.5 << ", " << y+0.5 << ")";
 
     for (auto p : v) {
-        cout << "\n    node{\\((" << p.first << ", "
-             << p.second << ")\\)} ++(1,0)";
+        cout << "\n    node{\\vs{" << p.first << "}{"
+             << p.second << "}} ++(1,0)";
     }
 
     cout << ";\n";
 }
 
-void partition (int x, int y, vector <pair <int, int>> v) {
+void rngOut (float x, float y, vector <pair <int, int>> v) {
+    vecOut (x, y, v);  int l = v.size();  if (l==1) return;
+    float tab = (float)l / 2;  float ofs = (float)l / 4;
     
+    int xSplit = xMedian (v);
+    vector <pair <int, int>> v1;  vector <pair <int, int>> v2;
+
+    copy_if (v.begin(), v.end(), std::back_inserter(v1),
+             [xSplit](auto p) {return (p.first <= xSplit);});
+    copy_if (v.begin(), v.end(), std::back_inserter(v2),
+             [xSplit](auto p) {return (p.first > xSplit);});
+
+    rngOut (x-ofs, y-2, v1); 
+    rngOut (x+tab+ofs, y-2, v2);
 }
 
 int main () {
@@ -53,10 +70,9 @@ int main () {
     shuffle(perm.begin(), perm.end(), rng);
 
     for (int i = 0; i < 16; i++) pts.push_back({i, perm[i]});
-    sort (pts.begin(), pts.end(),
-          [](auto a, auto b) {return a.second < b.second;});
+    sort (pts.begin(), pts.end(), [](auto a, auto b) {return a.second < b.second;});
 
-    vecOut (0, 10, pts);
+    rngOut (0, 0, pts);
 
     return 0;
 }
