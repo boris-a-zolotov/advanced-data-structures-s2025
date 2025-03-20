@@ -13,7 +13,7 @@
 | 2025.02.27 | [Д. Субботин](https://t.me/endimaa) | [Link-cut дерево](https://www.cs.cmu.edu/~sleator/papers/dynamic-trees.pdf) | |
 | 2025.03.06 | [А. Павловская](https://t.me/yungeiren) | Scapegoat дерево ([1](https://people.csail.mit.edu/rivest/pubs/GR93.pdf), [2](https://github.com/boris-a-zolotov/course-ads-s20/blob/master/main.pdf), [3](https://neerc.ifmo.ru/wiki/index.php?title=Scapegoat_Tree)) | |
 | 2025.03.13 | [Д. Сидоркин](https://t.me/sid00r) | DCEL; алгоритм Форчуна (de Berg et al., 7.2) | |
-| 2025.03.20 | [Н. Чухин](https://t.me/hamerfall) | [Arborally satisfied sets](https://erikdemaine.org/papers/BST_SODA2009/paper.pdf) | |
+| 2025.03.20 | [Н. Чухин](https://t.me/hamerfall) | [Arborally satisfied sets](https://erikdemaine.org/papers/BST_SODA2009/paper.pdf) | [geometry_bst.pdf](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/summaries/geometry_bst.pdf) |
 | 2025.03.27 | [Ф. Мамаев](https://t.me/graphtreeheap) | [Персистентность](https://www.cs.cmu.edu/~sleator/papers/another-persistence.pdf), [point location](https://dl.acm.org/doi/pdf/10.1145/6138.6151) | |
 | 2025.04.03 | [Р. Магдиев](https://t.me/RichyRussel) | *Klein MSSP* | |
 | 2025.04.10 | [В. Храмов](https://t.me/desargues) (онлайн) | *TBA* | |
