@@ -15,7 +15,7 @@
 | 2025.03.13 | [Д. Сидоркин](https://t.me/sid00r) | DCEL; алгоритм Форчуна (de Berg et al., 7.2) | |
 | 2025.03.20 | [Н. Чухин](https://t.me/hamerfall) | [Arborally satisfied sets](https://erikdemaine.org/papers/BST_SODA2009/paper.pdf) | [geometry_bst.pdf](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/summaries/geometry_bst.pdf) |
 | 2025.03.27 | [Ф. Мамаев](https://t.me/graphtreeheap) | [Персистентность](https://www.cs.cmu.edu/~sleator/papers/another-persistence.pdf), [point location](https://dl.acm.org/doi/pdf/10.1145/6138.6151) | |
-| 2025.04.03 | [Р. Магдиев](https://t.me/RichyRussel) | *Klein MSSP* | |
+| 2025.04.03 | [Р. Магдиев](https://t.me/RichyRussel) | Klein: [Shortest paths](https://planarity.org/Klein_shortest_paths_with_nonnegative_lengths.pdf), [MSSP](https://planarity.org/Klein_multiple_source_shortest_paths.pdf) | |
 | 2025.04.10 | [В. Храмов](https://t.me/desargues) (онлайн) | *TBA* | |
 
 
