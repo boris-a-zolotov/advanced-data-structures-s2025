@@ -17,6 +17,7 @@
 | 2025.03.27 | [Ф. Мамаев](https://t.me/graphtreeheap) | [Персистентность](https://www.cs.cmu.edu/~sleator/papers/another-persistence.pdf), [point location](https://dl.acm.org/doi/pdf/10.1145/6138.6151) | |
 | 2025.04.03 | [Р. Магдиев](https://t.me/RichyRussel) | Klein: [Shortest paths](https://planarity.org/Klein_shortest_paths_with_nonnegative_lengths.pdf), [MSSP](https://planarity.org/Klein_multiple_source_shortest_paths.pdf) | |
 | 2025.04.10 | [В. Храмов](https://t.me/desargues) (онлайн) | *TBA* | |
+| 2025.04.17 | [С. Харгелия](https://t.me/unstoppablechillmachine) | Хордальные графы ([Ibarra 2008](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/pdf/ibarra2008.pdf), Banerjee et al. 2018) | |
 
 
 ## Пул тем
