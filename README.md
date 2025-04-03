@@ -18,13 +18,12 @@
 | 2025.04.03 | [Р. Магдиев](https://t.me/RichyRussel) | Klein: [Shortest paths](https://planarity.org/Klein_shortest_paths_with_nonnegative_lengths.pdf), [MSSP](https://planarity.org/Klein_multiple_source_shortest_paths.pdf) | |
 | 2025.04.10 | [В. Храмов](https://t.me/desargues) (онлайн) | *TBA* | |
 | 2025.04.17 | [С. Харгелия](https://t.me/unstoppablechillmachine) | Хордальные графы ([Ibarra 2008](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/pdf/ibarra2008.pdf), Banerjee et al. 2018) | |
+| 2025.04.24 | [Д. Золотарёв](https://t.me/DanzillaMaster) | [Chan's dynamic nearest neighbor structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) | |
+| ≤2025.05.15 | С. Пресняков | [Charalampopoulos et al.: Almost Optimal Local LCS](https://drops.dagstuhl.de/storage/00lipics/lipics-vol198-icalp2021/LIPIcs.ICALP.2021.48/LIPIcs.ICALP.2021.48.pdf) | |
 
 
 ## Пул тем
 
-- *(Д. Золотарёв)* [Chan's structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) для неявной диаграммы Вороного
-  (dynamic nearest neighbor), по факту и заверениям автора умеет *всё что угодно.*
 - Allen et al., Incremental Voronoi diagrams
 - Sublinear explicit Voronoi diagrams
-- *(С. Пресняков)* Charalampopoulos et al.: Almost Optimal Local LCS
 - Tiskin, Zolotov: Optimal Local LCS
