@@ -20,4 +20,4 @@
 | 2025.04.17 | [С. Харгелия](https://t.me/unstoppablechillmachine) | Хордальные графы ([Ibarra 2008](https://github.com/boris-a-zolotov/advanced-data-structures-s2025/blob/main/pdf/ibarra2008.pdf), Banerjee et al. 2018) | |
 | 2025.04.24 | [Д. Золотарёв](https://t.me/DanzillaMaster) | [Chan's dynamic nearest neighbor structure](https://tmc.web.engr.illinois.edu/dch3d.pdf) | |
 | ≤2025.05.15 | С. Пресняков | [Charalampopoulos et al.: Almost Optimal Local LCS](https://drops.dagstuhl.de/storage/00lipics/lipics-vol198-icalp2021/LIPIcs.ICALP.2021.48/LIPIcs.ICALP.2021.48.pdf) | |
-| ≤2025.05.15 | [Е. Лебедева](https://t.me/KatirinaLe) | [Worst-Case Optimal Priority Queues](https://arxiv.org/pdf/1112.0993) | |
+| ≤2025.05.22 | [Е. Лебедева](https://t.me/KatirinaLe) | [Worst-Case Optimal Priority Queues](https://arxiv.org/pdf/1112.0993) | |
